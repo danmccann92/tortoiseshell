@@ -1,0 +1,81 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+  line-height: 1.4;
+}
+body {
+  margin: 0 auto;
+}
+.container-main {
+  margin: 0 auto;
+  background-image: url(../media/glasses-bg.png);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.container-site {
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+/*Flex Container */
+header {
+  margin-top: 0px;
+}
+.flexcontainer {
+  margin: 0 auto;
+  background-color: cadetblue;
+  color: white;
+}
+.flexcontainer .logo {
+  height: 1.5rem;
+  margin: 0rem 1rem 0rem 2rem;
+  display: inline-block;
+}
+.flexcontainer img {
+  height: 1.5rem;
+  width: auto;
+
+}
+.flexcontainer .title {
+  display: inline-block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+.flexcontainer .navigation {
+  display: inline-block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  margin-left: 10rem;
+}
+.flexcontainer .navigation span {
+  padding-right: 2rem;
+}
+
+/*Banner */
+.banner {
+  background-color: white;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+  text-align: center;
+  display: block;
+  margin-top: 10rem;
+  max-width: 50%;
+  text-transform: uppercase;
+  margin-left: 35%;
+}
+/*Services Flex Container*/
+/*.services_flex {
+  position: relative;
+  top: 30rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}*/
