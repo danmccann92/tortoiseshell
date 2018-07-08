@@ -10,27 +10,30 @@ body {
   margin: 0 auto;
   background-image: url(../media/glasses-bg.png);
   background-size: contain;
+  background-size: 100% 30rem;
   background-position: top;
   background-repeat: no-repeat;
 }
 .container-site {
   width: 960px;
   margin: 0 auto;
-  margin-top: 1rem;
 }
 
 /*Flex Container */
 header {
   margin-top: 0px;
+  height: 30rem;
+}
+header nav {
+  padding-top: 1rem;
 }
 .flexcontainer {
-  margin: 0 auto;
   background-color: cadetblue;
   color: white;
 }
 .flexcontainer .logo {
   height: 1.5rem;
-  margin: 0rem 1rem 0rem 2rem;
+  margin: .75rem 1rem 0rem 2rem;
   display: inline-block;
 }
 .flexcontainer img {
@@ -44,15 +47,18 @@ header {
   padding-bottom: 1rem;
   padding-right: 1rem;
 }
-.flexcontainer .navigation {
+.flexcontainer .navigation-full {
   display: inline-block;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-right: 1rem;
   margin-left: 10rem;
 }
-.flexcontainer .navigation span {
+.flexcontainer .navigation-full span {
   padding-right: 2rem;
+}
+.flexcontainer .navigation-mobile {
+  display: none;
 }
 
 /*Banner */
@@ -71,11 +77,171 @@ header {
   margin-left: 35%;
 }
 /*Services Flex Container*/
-/*.services_flex {
-  position: relative;
-  top: 30rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: center;
-}*/
+.services_flex {
+  display: block;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.services {
+  display: inline-block;
+  width: 5rem;
+  height: 8rem;
+  margin-right: 6rem;
+  text-align: center;
+}
+.services .services_img {
+  margin: 0 auto;
+}
+.services .services_img img {
+  width: 3.5rem;
+  margin: auto;
+}
+.services_call {
+  margin-top:.5rem;
+}
+
+/*Information Container*/
+
+.informaion_container {
+  display: block;
+  margin-bottom: 5rem;
+}
+.info {
+  display: inline-block;
+  width: 35%;
+  margin-right: 5%;
+}
+.colored_top {
+  width: 10rem;
+  color: white;
+  background-color: cadetblue;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding: .5rem 1.25rem;
+  text-transform: uppercase;
+}
+
+/*Footer*/
+
+footer {
+  padding: 4rem;
+}
+footer .logo {
+  height: 1.5rem;
+  margin-right: 1rem;
+  display: inline-block;
+}
+footer .logo img {
+  height: 1.5rem;
+}
+footer .copyright {
+  display: inline-block;
+}
+
+/*If viewed on tablet*/
+@media only screen and (max-width: 1200px) {
+
+  /*Main site features*/
+
+  .container_main {
+    background-size: 100% 22rem;
+  }
+  .container-site {
+    width: 100%;
+  }
+
+  /* Header Features */
+
+header nav {
+  padding-top: 0;
+}
+  .banner {
+    font-size: 1.33rem;
+    padding: .75rem 4rem;
+    margin-right: 2rem;
+    margin-top: 5rem;
+  }
+
+  .informaion_container {
+    margin-left: 5%;
+  }
+}
+
+/*If viewed on cellphones*/
+@media only screen and (max-width: 680px) {
+
+  /*Background*/
+
+html {
+  max-width: 100%;
+}
+  .container_main {
+    background-position: 20%;
+    background-size: 100% 17rem;
+  }
+
+  /*Header*/
+  header {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .flexcontainer .title {
+    display: none;
+    padding-right: 0;
+  }
+  .flexcontainer .navigation-full {
+    display: none;
+  }
+  .flexcontainer .navigation-mobile {
+    display: inline-block;
+    float: right;
+    margin-top: 1rem;
+    margin-right: 2rem;
+  }
+  .banner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 9rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /*Service Section*/
+  .services_flex {
+    margin-top: 3.77rem;
+  }
+  .services {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /*Information Section*/
+  .informaion_container {
+    margin-left: 0;
+    width: 100%;
+  }
+  .info {
+    width: 100%;
+    margin-right: 0;
+  }
+  .colored_top {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .5rem 0rem;
+  }
+  .colored_top span {
+    margin-left: 1.25rem;
+  }
+  .info_text {
+    font-size: .77rem;
+    margin-bottom: 4rem;
+  }
+}
